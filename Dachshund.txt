@@ -1,6 +1,0 @@
-interface Dachshund {
-
-    String eyeColor = "black";
-
-    void arf();
-}

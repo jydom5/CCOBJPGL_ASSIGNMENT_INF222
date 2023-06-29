@@ -1,4 +1,0 @@
-interface Perchin extends Beagle, Dachshund{
-
-    public void meow();
-}

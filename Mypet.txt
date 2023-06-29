@@ -1,7 +1,0 @@
-public class Mypet implements Dachgle{
-
-    public void arf(){
-        System.out.println("my dog is arfing");
-    }
-    
-}

@@ -1,0 +1,282 @@
+package exercise2;
+
+public class explorer {
+
+}
+package Explorers;
+
+import Planets.Mars;
+import Planets.Mercury;
+import Planets.Planet;
+import Planets.Pluto;
+import Planets.Saturn;
+import Planets.Uranus;
+import Planets.Earth;
+import Planets.Jupiter;
+import Planets.Neptune;
+import Planets.Venus;
+import Planets.Uranus;
+
+public interface Explorer {
+
+    void visit(Mars mars);
+
+    void visit(Saturn saturn);
+
+    void visit(Pluto pluto);
+
+    void visit(Mercury mercury);
+
+    void visit(Neptune neptune);
+
+    void visit(Earth earth);
+
+    void visit(Venus venus);
+
+    void visit(Jupiter jupiter);
+
+    void visit(Uranus uranus);
+
+    default void visit(Planet planet) {
+
+        System.out.println("Land on a planet");
+    }
+}
+
+
+public class HumanExplorer {
+
+}
+import Planets.*;
+
+public class HumanExplorer implements Explorer {
+   public void visit(Mars mars) {
+      System.out.println("Exploring a Planet");
+
+   }
+
+   public void visit(Saturn saturn) {
+
+      System.out.println("RT sa saturn");
+   }
+
+   public void visit(Mercury mercury) {
+      System.out.println("RT sa mercury");
+   }
+
+   public void visit(Earth earth) {
+      System.out.println("RT sa earth");
+   }
+
+   public void visit(Jupiter jupiter) {
+      System.out.println("RT sa jupiter");
+   }
+
+   public void visit(Venus venus) {
+      System.out.println("RT sa venus");
+   }
+
+   public void visit(Neptune neptune) {
+      System.out.println("RT sa neptune");
+   }
+
+   public void visit(Pluto pluto) {
+      System.out.println("RT sa pluto");
+   }
+
+   public void visit(Uranus uranus) {
+      System.out.println("RT sa uranus");
+   }
+}
+
+public class RobotExplorer {
+
+}
+import Planets.*;
+
+public class RobotExplorer implements Explorer {
+
+    public void visit(Mars mars) {
+        System.out.println("Kumain sa mars");
+
+    }
+
+    public void visit(Saturn saturn) {
+
+        System.out.println("Kumain sa saturn");
+    }
+
+    public void visit(Mercury mercury) {
+        System.out.println("Kumain sa mercury");
+    }
+
+    public void visit(Earth earth) {
+        System.out.println("Kumain sa earth");
+    }
+
+    public void visit(Jupiter jupiter) {
+        System.out.println("Kumain sa jupiter");
+    }
+
+    public void visit(Venus venus) {
+        System.out.println("Kumain sa venus");
+    }
+
+    public void visit(Neptune neptune) {
+        System.out.println("Kumain sa neptune");
+    }
+
+    public void visit(Pluto pluto) {
+        System.out.println("Kumain sa pluto");
+    }
+
+    public void visit(Uranus uranus) {
+        System.out.println("Kumain sa uranus");
+    }
+}
+
+PLANETS
+
+package Planets;
+
+public class Earth {
+
+}
+import Explorers.Explorer;
+
+public class Earth implements Planet {
+
+    public void accept(Explorer explorer) {
+        explorer.visit(this);
+    }
+}
+
+
+package Planets;
+
+public class Jupiter {
+
+}
+import Explorers.Explorer;
+
+public class Jupiter implements Planet {
+    
+    public void accept(Explorer explorer) {
+        explorer.visit(this);
+    }
+}
+
+
+package Planets;
+
+public class Mars {
+
+}
+import Explorers.Explorer;
+
+public class Mars implements Planet {
+    
+    public void accept(Explorer explorer) {
+        explorer.visit(this);
+    }
+}
+
+
+
+package Planets;
+
+public class Mercury {
+
+}
+import Explorers.Explorer;
+
+public class Mercury implements Planet {
+    
+    public void accept(Explorer explorer) {
+        explorer.visit(this);
+    }
+}
+
+
+
+package Planets;
+
+public class Neptune {
+
+}
+import Explorers.Explorer;
+
+public class Neptune implements Planet {
+    
+    public void accept(Explorer explorer) {
+        explorer.visit(this);
+    }
+}
+
+
+
+package Planets;
+
+public class Planet {
+
+}
+import Explorers.Explorer;
+
+public interface Planet {
+
+    public void accept(Explorer explorer);
+}
+
+
+
+package Planets;
+
+public class Saturn {
+
+}
+import Explorers.Explorer;
+
+public class Saturn implements Planet {
+    
+    public void accept(Explorer explorer) {
+        explorer.visit(this);
+    }
+}
+
+
+
+
+package Planets;
+
+public class Uranus {
+
+}
+import Explorers.Explorer;
+
+public class Uranus implements Planet {
+    
+    public void accept(Explorer explorer) {
+        explorer.visit(this);
+    }
+}
+
+
+
+package Planets;
+
+public class Venus {
+
+}
+package Planets;
+
+public class Venus {
+
+}
+import Explorers.Explorer;
+
+public class Venus implements Planet {
+    
+    public void accept(Explorer explorer) {
+        explorer.visit(this);
+    }
+}

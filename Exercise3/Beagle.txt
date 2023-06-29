@@ -1,0 +1,6 @@
+interface Beagle {
+
+    String height = "14 inches";
+
+    void arf();
+}
